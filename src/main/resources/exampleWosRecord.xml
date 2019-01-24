@@ -1,0 +1,358 @@
+<!--
+
+    Copyright 2019 Institut Laue–Langevin
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<REC r_id_disclaimer="ResearcherID data provided by Thomson Reuters">
+    <UID>WOS:000257724000046</UID>
+    <static_data>
+        <summary>
+            <EWUID>
+                <WUID coll_id="WOS"></WUID>
+                <edition value="WOS.SCI"></edition>
+            </EWUID>
+            <pub_info coverdate="JUL 24 2008" has_abstract="Y" issue="29" pubmonth="JUL 24" pubtype="Journal"
+                      pubyear="2008" sortdate="2008-07-24" vol="112">
+                <page begin="8748" end="8759" page_count="12">8748-8759</page>
+            </pub_info>
+            <titles count="6">
+                <title type="source">JOURNAL OF PHYSICAL CHEMISTRY B</title>
+                <title type="source_abbrev">J PHYS CHEM B</title>
+                <title type="abbrev_iso">J. Phys. Chem. B</title>
+                <title type="abbrev_11">J PHYS CH B</title>
+                <title type="abbrev_29">J PHYS CHEM B</title>
+                <title type="item">Structure-property relationships in the crystals of the smallest amino acid: An
+                    incoherent inelastic neutron scattering study of the glycine polymorphs
+                </title>
+            </titles>
+            <names count="5">
+                <name daisng_id="1000500439" seq_no="1" addr_no="1" dais_id="16265618" reprint="Y" role="author">
+                    <display_name>Bordallo, Heloisa N.</display_name>
+                    <full_name>Bordallo, Heloisa N.</full_name>
+                    <wos_standard>Bordallo, HN</wos_standard>
+                    <first_name>Heloisa N.</first_name>
+                    <last_name>Bordallo</last_name>
+                    <email_addr>bordallo@hmi.de</email_addr>
+                </name>
+                <name daisng_id="1000472293" seq_no="2" addr_no="2 3" dais_id="10516643" role="author">
+                    <display_name>Boldyreva, Elena V.</display_name>
+                    <full_name>Boldyreva, Elena V.</full_name>
+                    <wos_standard>Boldyreva, EV</wos_standard>
+                    <first_name>Elena V.</first_name>
+                    <last_name>Boldyreva</last_name>
+                </name>
+                <name daisng_id="1000358836" seq_no="3" addr_no="1" dais_id="16196962" role="author">
+                    <display_name>Buchsteiner, Alexandra</display_name>
+                    <full_name>Buchsteiner, Alexandra</full_name>
+                    <wos_standard>Buchsteiner, A</wos_standard>
+                    <first_name>Alexandra</first_name>
+                    <last_name>Buchsteiner</last_name>
+                </name>
+                <name daisng_id="18036366" seq_no="4" addr_no="4" role="author">
+                    <display_name>Koza, Michael Marek</display_name>
+                    <full_name>Koza, Michael Marek</full_name>
+                    <wos_standard>Koza, MM</wos_standard>
+                    <first_name>Michael Marek</first_name>
+                    <last_name>Koza</last_name>
+                </name>
+                <name daisng_id="44550300" seq_no="5" addr_no="1" dais_id="16298191" role="author">
+                    <display_name>Landsgesell, Sven</display_name>
+                    <full_name>Landsgesell, Sven</full_name>
+                    <wos_standard>Landsgesell, S</wos_standard>
+                    <first_name>Sven</first_name>
+                    <last_name>Landsgesell</last_name>
+                </name>
+            </names>
+            <doctypes count="1">
+                <doctype>Review</doctype>
+            </doctypes>
+            <publishers>
+                <publisher>
+                    <address_spec addr_no="1">
+                        <full_address>1155 16TH ST, NW, WASHINGTON, DC 20036 USA</full_address>
+                        <city>WASHINGTON</city>
+                    </address_spec>
+                    <names count="1">
+                        <name addr_no="1" role="publisher" seq_no="1">
+                            <display_name>AMER CHEMICAL SOC</display_name>
+                            <full_name>AMER CHEMICAL SOC</full_name>
+                        </name>
+                    </names>
+                </publisher>
+            </publishers>
+        </summary>
+        <fullrecord_metadata>
+            <languages count="1">
+                <language type="primary">English</language>
+            </languages>
+            <normalized_languages count="1">
+                <language type="primary">English</language>
+            </normalized_languages>
+            <normalized_doctypes count="1">
+                <doctype>Review</doctype>
+            </normalized_doctypes>
+            <refs count="101"></refs>
+            <addresses count="4">
+                <address_name>
+                    <address_spec addr_no="1">
+                        <full_address>Hahn Meitner Inst Berlin GmbH, D-14109 Berlin, Germany</full_address>
+                        <organizations count="3">
+                            <organization>Hahn Meitner Inst Berlin GmbH</organization>
+                            <organization pref="Y">Helmholtz Association</organization>
+                            <organization pref="Y">Helmholtz-Zentrum Berlin (HZB)</organization>
+                        </organizations>
+                        <city>Berlin</city>
+                        <country>Germany</country>
+                        <zip location="BC">D-14109</zip>
+                    </address_spec>
+                    <names count="3">
+                        <name daisng_id="1000500439" seq_no="1" addr_no="1" dais_id="16265618" reprint="Y"
+                              role="author">
+                            <display_name>Bordallo, Heloisa N.</display_name>
+                            <full_name>Bordallo, Heloisa N.</full_name>
+                            <wos_standard>Bordallo, HN</wos_standard>
+                            <first_name>Heloisa N.</first_name>
+                            <last_name>Bordallo</last_name>
+                            <email_addr>bordallo@hmi.de</email_addr>
+                        </name>
+                        <name daisng_id="1000358836" seq_no="3" addr_no="1" dais_id="16196962" role="author">
+                            <display_name>Buchsteiner, Alexandra</display_name>
+                            <full_name>Buchsteiner, Alexandra</full_name>
+                            <wos_standard>Buchsteiner, A</wos_standard>
+                            <first_name>Alexandra</first_name>
+                            <last_name>Buchsteiner</last_name>
+                        </name>
+                        <name daisng_id="44550300" seq_no="5" addr_no="1" dais_id="16298191" role="author">
+                            <display_name>Landsgesell, Sven</display_name>
+                            <full_name>Landsgesell, Sven</full_name>
+                            <wos_standard>Landsgesell, S</wos_standard>
+                            <first_name>Sven</first_name>
+                            <last_name>Landsgesell</last_name>
+                        </name>
+                    </names>
+                </address_name>
+                <address_name>
+                    <address_spec addr_no="2">
+                        <full_address>Novosibirsk State Univ, REC 008, Novosibirsk 630090, Russia</full_address>
+                        <organizations count="2">
+                            <organization>Novosibirsk State Univ</organization>
+                            <organization pref="Y">Novosibirsk State University</organization>
+                        </organizations>
+                        <suborganizations count="1">
+                            <suborganization>REC 008</suborganization>
+                        </suborganizations>
+                        <city>Novosibirsk</city>
+                        <country>Russia</country>
+                        <zip location="AC">630090</zip>
+                    </address_spec>
+                    <names count="1">
+                        <name daisng_id="1000472293" seq_no="2" addr_no="2" dais_id="10516643" role="author">
+                            <display_name>Boldyreva, Elena V.</display_name>
+                            <full_name>Boldyreva, Elena V.</full_name>
+                            <wos_standard>Boldyreva, EV</wos_standard>
+                            <first_name>Elena V.</first_name>
+                            <last_name>Boldyreva</last_name>
+                        </name>
+                    </names>
+                </address_name>
+                <address_name>
+                    <address_spec addr_no="3">
+                        <full_address>Inst Solid State Chem &amp; Mechanochem, Novosibirsk 630128, Russia</full_address>
+                        <organizations count="2">
+                            <organization>Inst Solid State Chem &amp; Mechanochem</organization>
+                            <organization pref="Y">Russian Academy of Sciences</organization>
+                        </organizations>
+                        <city>Novosibirsk</city>
+                        <country>Russia</country>
+                        <zip location="AC">630128</zip>
+                    </address_spec>
+                    <names count="1">
+                        <name daisng_id="1000472293" seq_no="2" addr_no="3" dais_id="10516643" role="author">
+                            <display_name>Boldyreva, Elena V.</display_name>
+                            <full_name>Boldyreva, Elena V.</full_name>
+                            <wos_standard>Boldyreva, EV</wos_standard>
+                            <first_name>Elena V.</first_name>
+                            <last_name>Boldyreva</last_name>
+                        </name>
+                    </names>
+                </address_name>
+                <address_name>
+                    <address_spec addr_no="4">
+                        <full_address>Inst Max Von Laue Paul Langevin, F-38042 Grenoble 9, France</full_address>
+                        <organizations count="2">
+                            <organization>Inst Max Von Laue Paul Langevin</organization>
+                            <organization pref="Y">Institute Laue Langevin</organization>
+                        </organizations>
+                        <city>Grenoble</city>
+                        <country>France</country>
+                        <zip location="BC">F-38042</zip>
+                        <zip location="AC">9</zip>
+                    </address_spec>
+                    <names count="1">
+                        <name daisng_id="18036366" seq_no="4" addr_no="4" role="author">
+                            <display_name>Koza, Michael Marek</display_name>
+                            <full_name>Koza, Michael Marek</full_name>
+                            <wos_standard>Koza, MM</wos_standard>
+                            <first_name>Michael Marek</first_name>
+                            <last_name>Koza</last_name>
+                        </name>
+                    </names>
+                </address_name>
+            </addresses>
+            <reprint_addresses count="1">
+                <address_name>
+                    <address_spec addr_no="1">
+                        <full_address>Hahn Meitner Inst Berlin GmbH, Glienicker Str 100, D-14109 Berlin, Germany
+                        </full_address>
+                        <organizations count="3">
+                            <organization>Hahn Meitner Inst Berlin GmbH</organization>
+                            <organization pref="Y">Helmholtz Association</organization>
+                            <organization pref="Y">Helmholtz-Zentrum Berlin (HZB)</organization>
+                        </organizations>
+                        <street>Glienicker Str 100</street>
+                        <city>Berlin</city>
+                        <country>Germany</country>
+                        <zip location="BC">D-14109</zip>
+                    </address_spec>
+                    <names count="1">
+                        <name addr_no="1" dais_id="16265618" r_id="I-6836-2012" reprint="Y" role="author" seq_no="1">
+                            <display_name>Bordallo, Heloisa N.</display_name>
+                            <full_name>Bordallo, Heloisa N.</full_name>
+                            <wos_standard>Bordallo, HN</wos_standard>
+                            <first_name>Heloisa N.</first_name>
+                            <last_name>Bordallo</last_name>
+                            <email_addr>bordallo@hmi.de</email_addr>
+                        </name>
+                    </names>
+                </address_name>
+            </reprint_addresses>
+            <category_info>
+                <headings count="1">
+                    <heading>Science &amp; Technology</heading>
+                </headings>
+                <subheadings count="1">
+                    <subheading>Physical Sciences</subheading>
+                </subheadings>
+                <subjects count="3">
+                    <subject ascatype="traditional">Chemistry, Physical</subject>
+                    <subject ascatype="extended">Chemistry</subject>
+                    <subject ascatype="traditional">CHEMISTRY, PHYSICAL</subject>
+                </subjects>
+            </category_info>
+            <abstracts count="1">
+                <abstract>
+                    <abstract_text count="1">
+                        <p>Incoherent inelastic neutron scattering spectra for the three crystalline polymorphs
+                            (alpha-P2(1)/n, beta-P2(1), gamma-P3(1)) of glycine (C(2)H(5)NO(2)) at temperatures between
+                            5 and 300 K (using the time-of-flight (ToF) spectrometer NEAT at HMI) and at pressures from
+                            ambient up to 1 GPa (using the ToF spectrometer IN6 at the ILL) were measured. Significant
+                            differences in the band positions and their relative intensities in the density of states
+                            (DoS) were observed for the three polymorphs, which can be related to the different
+                            intermolecular interactions. The mean-squared displacement, &lt; u(2)&gt;(T), dependence
+                            reveals a change in dynamic properties at about the same temperature (150 K) for all the
+                            three forms, which can be related to the reorientation of the NH(3) group. Besides, a
+                            dynamic transition in beta-glycine at about 230-250 K on cooling was also observed,
+                            supporting previously obtained adiabatic calorimetry data. This behavior is similar to that
+                            already observed in amorphous solids, on approaching the glass transition temperatures, as
+                            well as in biological systems. It suggests the onset of degrees of freedom most likely
+                            related to transitions between slightly different conformational orientations. The DoS
+                            obtained as a function of pressure has confirmed the stability of the alpha-form with
+                            respect to pressure and also depicted a sign of the previously reported reversible beta-beta&apos;
+                            glycine phase transition in between 0.6 and 0.8 GPa. Moreover, a remarkable kinetic effect
+                            in the pressure-induced phase transition in gamma-glycine was revealed. After the sample was
+                            kept at 0.8 GPa for an hour in the neutron beam, an irreversible transition into a
+                            high-pressure form (different from the beta&apos;-form) occurred, although previously in
+                            X-Ray diffraction and Raman spectroscopy experiments a gamma- to delta-glycine phase
+                            transition was observed above 3.5 GPa only.
+                        </p>
+                    </abstract_text>
+                </abstract>
+            </abstracts>
+        </fullrecord_metadata>
+        <item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" coll_id="WOS" xsi:type="itemType_wos">
+            <ids avail="N">327IY</ids>
+            <bib_id>112 (29): 8748-8759 JUL 24 2008</bib_id>
+            <bib_pagecount type="Journal">436</bib_pagecount>
+            <keywords_plus count="10">
+                <keyword>MEAN-SQUARE DISPLACEMENT</keyword>
+                <keyword>ALPHA-GLYCINE</keyword>
+                <keyword>GAMMA-GLYCINE</keyword>
+                <keyword>PHASE-TRANSITION</keyword>
+                <keyword>BETA-GLYCINE</keyword>
+                <keyword>L-ALANINE</keyword>
+                <keyword>VIBRATIONAL-SPECTRA</keyword>
+                <keyword>RAMAN-SPECTROSCOPY</keyword>
+                <keyword>SINGLE-CRYSTAL</keyword>
+                <keyword>HIGH-PRESSURE</keyword>
+            </keywords_plus>
+        </item>
+        <contributors count="5">
+            <contributor>
+                <name orcid_id="C-3873-2012" role="researcher_id" seq_no="1">
+                    <display_name>Buchsteiner, Alexandra</display_name>
+                    <full_name>Buchsteiner, Alexandra</full_name>
+                    <first_name>Alexandra</first_name>
+                    <last_name>Buchsteiner</last_name>
+                </name>
+            </contributor>
+            <contributor>
+                <name orcid_id="0000-0002-2469-3548" r_id="B-1467-2013" role="researcher_id" seq_no="2">
+                    <display_name>Landsgesell, Sven</display_name>
+                    <full_name>Landsgesell, Sven</full_name>
+                    <first_name>Sven</first_name>
+                    <last_name>Landsgesell</last_name>
+                </name>
+            </contributor>
+            <contributor>
+                <name orcid_id="0000-0003-0750-0553" r_id="I-6836-2012" role="researcher_id" seq_no="3">
+                    <display_name>Bordallo, Heloisa</display_name>
+                    <full_name>Bordallo, Heloisa</full_name>
+                    <first_name>Heloisa</first_name>
+                    <last_name>Bordallo</last_name>
+                </name>
+            </contributor>
+            <contributor>
+                <name orcid_id="0000-0001-7227-7584" r_id="" role="researcher_id" seq_no="4">
+                    <display_name>Buchsteiner, Alexandra</display_name>
+                    <full_name>Buchsteiner, Alexandra</full_name>
+                    <first_name>Alexandra</first_name>
+                    <last_name>Buchsteiner</last_name>
+                </name>
+            </contributor>
+            <contributor>
+                <name orcid_id="0000-0002-1401-2438" role="researcher_id" seq_no="5">
+                    <display_name>Boldyreva, Elena</display_name>
+                    <full_name>Boldyreva, Elena</full_name>
+                    <first_name>Elena</first_name>
+                    <last_name>Boldyreva</last_name>
+                </name>
+            </contributor>
+        </contributors>
+    </static_data>
+    <dynamic_data>
+        <citation_related>
+            <tc_list>
+                <silo_tc coll_id="WOS" local_count="33"></silo_tc>
+            </tc_list>
+        </citation_related>
+        <cluster_related>
+            <identifiers>
+                <identifier type="issn" value="1520-6106"></identifier>
+                <identifier type="doi" value="10.1021/jp8014723"></identifier>
+                <identifier type="xref_doi" value="10.1021/jp8014723"></identifier>
+            </identifiers>
+        </cluster_related>
+    </dynamic_data>
+</REC>

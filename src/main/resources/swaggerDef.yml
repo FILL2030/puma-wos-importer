@@ -1,0 +1,505 @@
+#
+# Copyright 2019 Institut Laue–Langevin
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+swagger: '2.0'
+info:
+  title: Importer Api
+  description: importer entrypoint to launch importer a send documen to the pcc
+  version: "1.0.0"
+schemes:
+  - http
+basePath: /entrypoint/v1
+produces:
+  - application/json
+paths:
+  /info:
+    get:
+      summary: return importer capabilities
+      description: |
+        The info endpoint returns information about the capabilitiesof the importer.
+      responses:
+        200:
+          description: A list of capabilities
+          schema:
+            $ref: '#/definitions/capabilities'
+
+  /status:
+    get:
+      summary: return importer current status
+      description: |
+        The info endpoint returns information about running task of the importer
+      responses:
+        200:
+          description: A list of running task
+          schema:
+            $ref: '#/definitions/task'
+
+  /health:
+    get:
+      summary: return importer current health, 200 if working, 400 if no
+      description: |
+        The info endpoint returns information about the health status of the importer
+      responses:
+        200:
+          description: working response
+          schema:
+            $ref: '#/definitions/healthResponse'
+        400:
+          description: error response
+          schema:
+            $ref: '#/definitions/healthResponse'
+
+  /document:
+    get:
+      summary: return all document
+      description: |
+        If the importer support all querymode, all the document from the data source will be returned
+        in the data section of the response. The meta data of the section contains the iterator over results
+      parameters:
+        - name: ids
+          in: query
+          description: IDs of document to retrieve
+          required: false
+          type: string
+        - name: year
+          in: query
+          description: year of document to retrieve
+          required: false
+          type: string
+        - name: month
+          in: query
+          description: month of document to retrieve
+          required: false
+          type: string
+      responses:
+        200:
+          description: A list of document
+          schema:
+            $ref: '#/definitions/documentResponse'
+        400:
+          description: error response
+          schema:
+            $ref: '#/definitions/failed'
+
+  /document/{id}:
+    get:
+      summary: return all document
+      description: |
+        If the importer support id querymode, the document from the data source will be returned
+        in the data section of the response.
+      parameters:
+        - name: id
+          in: path
+          description: ID of document to retrieve
+          required: true
+          type: string
+      responses:
+        200:
+          description: A list of one document
+          schema:
+            $ref: '#/definitions/documentResponse'
+        400:
+          description: error response
+          schema:
+            $ref: '#/definitions/failed'
+
+  /document/search:
+    get:
+      summary: return all document
+      description: |
+        If the importer support search querymode, all the document from the data  who match the query will be returned
+        in the data section of the response. The meta data of the section contains the iterator over results
+      parameters:
+        - name: query
+          in: query
+          description: fulltext query of document to retrieve
+          required: true
+          type: string
+        - name: year
+          in: query
+          description: year of document to retrieve
+          required: false
+          type: string
+        - name: month
+          in: query
+          description: month of document to retrieve
+          required: false
+          type: string
+      responses:
+        200:
+          description: A list of document
+          schema:
+            $ref: '#/definitions/documentResponse'
+        400:
+          description: error response
+          schema:
+            $ref: '#/definitions/failed'
+
+  /document/cursor/{token}:
+    get:
+      summary: return all document
+      description: |
+        url to use cursor
+      parameters:
+        - name: token
+          in: path
+          description: cursor id
+          required: true
+          type: string
+      responses:
+        200:
+          description: A list of document
+          schema:
+            $ref: '#/definitions/documentResponse'
+        400:
+          description: error response
+          schema:
+            $ref: '#/definitions/failed'
+
+
+definitions:
+  healthResponse:
+    type: boolean
+
+  busy:
+    type: object
+    properties:
+      status:
+        type: string
+        description: the status code
+      retrytime:
+        type: number
+        description: useless to retry beforce this requestDuration
+
+  failed:
+    type: object
+    properties:
+      status:
+        type: string
+        description: the status code
+      errorMessage:
+        type: string
+        description: the error message, the pcc will log this message
+
+  task:
+    type: array
+    items:
+      properties:
+        id:
+          type: number
+        submitDate:
+          type: string
+        endDate:
+          type: string
+        status:
+          type: object
+          properties:
+            estimatedRemainingTime:
+              type: number
+
+  capabilities:
+    type: object
+    properties:
+      importerName:
+        type: string
+        description: the name of the importer
+      providedMetaData:
+        type: object
+        description: meta data provided by the importer to the PCC
+        properties:
+          id:
+            type: string
+            enum: [never, partial, provided]
+          doi:
+            type: string
+            enum: [never, partial, provided]
+          title:
+            type: string
+            enum: [never, partial, provided]
+          abstract:
+            type: string
+            enum: [never, partial, provided]
+          date:
+            type: string
+            enum: [never, partial, provided]
+          documentType:
+            type: string
+            enum: [never, partial, provided]
+          originURL:
+            type: string
+            enum: [never, partial, provided]
+          person:
+            type: string
+            enum: [never, partial, provided]
+          orcid_id:
+            type: string
+            enum: [never, partial, provided]
+          email:
+            type: string
+            enum: [never, partial, provided]
+          laboratory:
+            type: string
+            enum: [never, partial, provided]
+          instrument:
+            type: string
+            enum: [never, partial, provided]
+          experimentTechnique:
+            type: string
+            enum: [never, partial, provided]
+          keyword:
+            type: string
+            enum: [never, partial, provided]
+          formula:
+            type: string
+            enum: [never, partial, provided]
+          formulaSetup:
+            type: string
+            enum: [never, partial, provided]
+          reference:
+            type: string
+            enum: [never, partial, provided]
+          citation:
+            type: string
+            enum: [never, partial, provided]
+          researchDomain:
+            type: string
+            enum: [never, partial, provided]
+          journal:
+            type: string
+            enum: [never, partial, provided]
+          publisher:
+            type: string
+            enum: [never, partial, provided]
+      supportedOperations:
+        type: object
+        description: operation suported by the importer
+        properties:
+          search:
+            type: boolean
+          id:
+            type: boolean
+          getAll:
+            type: boolean
+      supportedQueryFilter:
+        type: object
+        description: query filter supported by the importer
+        properties:
+          year:
+            type: boolean
+          month:
+            type: boolean
+
+  documentResponse:
+    type: object
+    properties:
+      metadata:
+        type: object
+        description: info on the current query/ iterator
+        properties:
+          nextCursor:
+            type: string
+            enum: [working,finished]
+          previousCursor:
+            type: string
+          status:
+            type: string
+          count:
+            type: number
+          totalCount:
+            type: number
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/document'
+
+  document:
+    type: object
+    properties:
+      id:
+        type: number
+      sourceId:
+        type: string
+      doi:
+        type: string
+      urls:
+        type: object
+        description: if the document is a publication or other document from a scientist journal,
+          you can provide here the pdf url or / and the url of the journal article
+        properties:
+          pdf:
+            type: string
+          article:
+            type: string
+      type:
+        type: string
+      title:
+        type: string
+      abstract:
+        type: string
+      releaseDate:
+        type: string
+      laboratories:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+            name:
+              type: string
+            shortName:
+              type: string
+            address:
+              type: string
+            city:
+              type: string
+            country:
+              type: string
+      people:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+            publicationName:
+              type: string
+            firstName:
+              type: string
+            lastName:
+              type: string
+            orcidId:
+              type: string
+            researcherId:
+              type: string
+            email:
+              type: string
+            laboratoryId:
+              type: number
+      instruments:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+            name:
+              type: string
+            shortName:
+              type: string
+            experimentTechniquesId:
+              type: number
+            laboratoryId:
+              type: number
+            formulasId:
+              type: array
+              items:
+                type: number
+      experimentTechniques:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+            name:
+              type: string
+            instrumentsId:
+              type: array
+              items:
+                type: number
+      formulas:
+        type: array
+        items:
+          type: object
+          properties:
+            code:
+              type: string
+            consistance:
+              type: string
+            temperature:
+              type: string
+            pressure:
+              type: string
+            magneticField:
+              type: string
+            instrumentsId:
+              type: array
+              items:
+                type: number
+      keywords:
+        type: array
+        items:
+          type: string
+      references:
+        type: array
+        items:
+          type: string
+      citation:
+        type: array
+        items:
+          type: string
+      researchDomains:
+        type: array
+        items:
+          type: string
+      journal:
+        type: object
+        properties:
+          name:
+            type: string
+      publishers:
+        type: array
+        items:
+          type: object
+          properties:
+            name:
+              type: string
+            city:
+              type: string
+            address:
+              type: string
+      files:
+        type: array
+        items:
+          type: object
+          properties:
+            data:
+              type: string
+            name:
+              type: string
+            checksum:
+              type: string
+            mimeType:
+              type: string
+      additionnalText:
+        type: array
+        items:
+          type: object
+          properties:
+            text:
+              type: string
+            analyser:
+              type: array
+              items:
+                type: string
+
+
+
+
+
+
+
